@@ -1,5 +1,7 @@
 # Booking App
 
+Check the website out [now](https://booking-io.vercel.app/)
+
 <hr>
 
 - RegisterTemp and LoginTemp are currently not used. It may be added later to register email in database and login user using an OTP to mail to display a dashboard(currently there is no dashboard).
