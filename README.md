@@ -10,9 +10,9 @@
 
 # Architecture :
 
-    - Backend :- Heroku - company email
-    - Database :- MongoDB - personal email
-    - Frontend :- Vercel - personal email
+    - Backend :- Azure App Service
+    - Database :- MongoDB
+    - Frontend :- Vercel
 
 # Schema for DB
 
