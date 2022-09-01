@@ -1,0 +1,13 @@
+.ThingsToDo > h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 2px solid rgb(217, 217, 217);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .ThingsToDo > h1 {
+    font-size: 1.5rem;
+  }
+}

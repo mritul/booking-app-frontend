@@ -1,0 +1,67 @@
+.Login {
+  width: 50%;
+  min-width: 280px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#login-form {
+  padding: 2rem 1rem;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(68, 68, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form input {
+  width: 100%;
+  height: 40px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgb(185, 185, 185);
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#login-form input:focus {
+  border-color: var(--brand);
+  transition: 0.3s ease;
+}
+
+.login-submit-btn {
+  background-color: var(--brand);
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--brand);
+}
+
+.Login .helper-msg {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Login .helper-msg > * {
+  text-decoration: none;
+}
+
+.Login .helper-msg span {
+  color: rgb(92, 125, 244);
+}
+
+@media screen and (max-width: 685px) {
+  .Login .helper-msg {
+    font-size: 0.8rem;
+  }
+}

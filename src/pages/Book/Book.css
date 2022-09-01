@@ -1,0 +1,154 @@
+.Book {
+  scroll-behavior: smooth;
+}
+
+.variants {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.variants::-webkit-scrollbar {
+  display: none;
+}
+
+/* Time Selection */
+
+#time-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.selection-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 700px;
+}
+
+.selection-container .title {
+  font-size: 1.5rem;
+}
+
+.selection-container select {
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.date-picker {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.guide {
+  color: rgb(0, 66, 198);
+  margin: auto;
+}
+
+/* Summary card */
+#details-card {
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  padding: 0.5rem;
+  display: flex;
+  width: 80%;
+  max-width: 700px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+#details-card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#details-card .text h1 {
+  font-weight: 600;
+}
+
+#details-card .guest-info {
+  display: flex;
+  gap: 1rem;
+}
+
+#details-card .text p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#details-card .date {
+  color: rgb(82, 82, 82);
+  font-weight: 500;
+}
+
+.total {
+  display: flex;
+  font-weight: 700;
+}
+
+.btn-next {
+  background-color: var(--brand);
+  padding: 0.5rem;
+  width: 150px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 880px) {
+  #details-card .text h1 {
+    font-size: 1rem;
+  }
+
+  #details-card .date {
+    font-size: 0.8rem;
+  }
+
+  .guest-info {
+    font-size: 0.8rem;
+  }
+
+  .total {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .selection-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .selection-container .title {
+    font-size: 1rem;
+  }
+
+  #details-card {
+    width: 100%;
+  }
+
+  #details-card .text {
+    text-align: center;
+  }
+  #details-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .btn-next {
+    font-size: 0.8rem;
+    width: 70px;
+  }
+}

@@ -1,0 +1,90 @@
+.VariantCard {
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgb(190, 190, 190);
+  padding: 1rem;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.variant-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.variant-info {
+  color: grey;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+
+.pricing span {
+  font-weight: 800;
+  color: black;
+  font-size: 1rem;
+}
+
+.highlights {
+  padding: 1rem;
+  border-top: 1px solid var(--light-grey);
+}
+
+.highlight {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.select-btn,
+.selected-btn,
+.not-available-btn {
+  outline: none;
+  width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.not-available-btn {
+  color: rgb(182, 182, 182);
+}
+
+.select-btn {
+  background: none;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  cursor: pointer;
+}
+
+.selected-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--brand);
+  background-color: rgba(54, 44, 255, 0.2);
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.select-btn:hover {
+  background-color: rgba(54, 44, 255, 0.2);
+}

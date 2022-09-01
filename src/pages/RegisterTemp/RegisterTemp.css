@@ -1,0 +1,120 @@
+.Register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid rgb(68, 68, 68);
+  width: 60%;
+  min-width: 700px;
+  margin: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 10px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-left > h1 {
+  margin-bottom: 1rem;
+}
+
+.card-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+#register-form {
+  width: 100%;
+}
+
+#register-form input {
+  width: 100%;
+  height: 30px;
+  font-size: 0.8rem;
+  outline: none;
+  border-radius: 5px;
+  border-width: 0;
+  border: 2px solid rgb(185, 185, 185);
+  transition: 0.3s ease;
+  padding: 0.5rem;
+}
+
+#register-form input:focus {
+  border-color: var(--brand);
+  transition: 0.3s ease;
+}
+
+#register-form label {
+  font-weight: 500;
+  color: rgb(46, 46, 46);
+}
+
+.register-submit-btn {
+  margin: 1rem 0;
+  background-color: var(--brand);
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--brand);
+}
+
+#register-svg {
+  animation: float infinite 2s linear;
+}
+
+.about-field {
+  width: 100%;
+}
+
+.Register .helper-msg {
+  text-align: center;
+}
+
+.Register .helper-msg > * {
+  text-decoration: none;
+  text-align: center;
+}
+
+.Register .helper-msg span {
+  color: rgb(92, 125, 244);
+}
+
+@media screen and (max-width: 720px) {
+  .Register {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    min-width: 300px;
+  }
+
+  #register-svg {
+    display: none;
+  }
+
+  #register-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-left > h1 {
+    font-size: 1.5rem;
+  }
+
+  .Register .helper-msg {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

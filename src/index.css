@@ -1,0 +1,15 @@
+:root {
+  --brand: rgb(54, 44, 255);
+  --light-grey: rgb(202, 202, 202);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
