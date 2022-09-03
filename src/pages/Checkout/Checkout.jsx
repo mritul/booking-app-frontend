@@ -145,6 +145,7 @@ const Checkout = () => {
       setEmail("");
       setPhone("");
       setFullName("");
+      navigate("/");
     } catch (err) {
       console.log(err);
     }

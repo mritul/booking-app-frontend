@@ -1,15 +1,11 @@
+import axios from "axios";
 import React, { useState } from "react";
-// import HelperMessage from "../../components/universal/HelperMessage/HelperMessage";
-import { Link } from "react-router-dom";
+import Bookings from "../../components/ViewBookings/Bookings/Bookings";
 import "./ViewBookings.css";
 const Login = () => {
-  // useState hooks for handling input fields
   //Login form
   const [loginEmail, setLoginEmail] = useState("");
-
-  //useState hook to show helper message if the entered username or password are incorrect in the login process
-  // const [incorrectLoginCredentials, setIncorrectLoginCredentials] =
-  //   useState(false);
+  const [bookings, setBookings] = useState([]);
 
   // Handling Input fields
   const handleEmailInput = (e) => {
@@ -17,8 +13,16 @@ const Login = () => {
   };
 
   // Handling form submit
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const response = await axios({
+      method: "GET",
+      url: `${process.env.REACT_APP_BACKEND_URL}/api/bookings/${loginEmail}`,
+    });
+    const data = await response.data;
+    console.log(data);
+    setBookings(data.bookings);
+    setLoginEmail("");
   };
   return (
     <div className="ViewBookings">
@@ -31,8 +35,13 @@ const Login = () => {
           value={loginEmail}
           onChange={handleEmailInput}
         />
-        <button className="btn view-bookings-submit-btn">Send OTP</button>
+        <button className="btn view-bookings-submit-btn">Check Bookings</button>
       </form>
+      {bookings ? (
+        <Bookings bookings={bookings} />
+      ) : (
+        <>No bookings associated</>
+      )}
     </div>
   );
 };
