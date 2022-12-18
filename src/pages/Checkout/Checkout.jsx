@@ -32,7 +32,7 @@ const Checkout = () => {
       .catch((err) => {
         throw err;
       });
-  }, []);
+  }, [experienceId]);
 
   useEffect(() => {
     axios({
@@ -195,7 +195,7 @@ const Checkout = () => {
             </div>
           </section>
           <section>
-            {adults != 0 ? (
+            {adults !== 0 ? (
               <div className="panel">
                 <p>Adults : {adults}</p>
                 <p>
@@ -206,7 +206,7 @@ const Checkout = () => {
             ) : (
               <></>
             )}
-            {children != 0 ? (
+            {children !== 0 ? (
               <div className="panel">
                 <p>Children : {children}</p>
                 <p>
@@ -217,7 +217,7 @@ const Checkout = () => {
             ) : (
               <></>
             )}
-            {infants != 0 ? (
+            {infants !== 0 ? (
               <div className="panel">
                 <p>Infants : {infants}</p>
                 <p>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HelperMessage from "../../components/universal/HelperMessage/HelperMessage";
 import "./Register.css";
 
 const Register = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   //useState hooks for handling input fields
   // Registration form
@@ -37,6 +37,7 @@ const Register = () => {
   //Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    setUsernameTaken(true);
     // Since we use preventDefault, the form action won't be executed and hence we perform the post request through axios
   };
   return (

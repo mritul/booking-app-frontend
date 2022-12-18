@@ -20,7 +20,7 @@ export const ThingsToDo = () => {
       .catch((err) => {
         throw err;
       });
-  }, []);
+  }, [cityId]);
   return (
     <section className="ThingsToDo">
       <h1>Select an experience</h1>
@@ -36,6 +36,7 @@ export const ThingsToDo = () => {
             nextAvailable={experience.nextAvailable}
             key={idx}
             experienceId={experience._id}
+            setSearchParams={setSearchParams}
           />
         ))}
       </div>
