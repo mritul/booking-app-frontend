@@ -22,11 +22,13 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className="nav-items-desktop">
-            <li className="nav-item">Explore</li>
+            <Link to="/">
+              <li className="nav-item">Explore</li>
+            </Link>
             {/* <li className="nav-item">Visitor Information</li>
             <li className="nav-item">Attractions</li> */}
-            <li className="nav-item">Tours</li>
-            <li className="nav-item">Buy Tickets</li>
+            {/* <li className="nav-item">Tours</li> */}
+            {/* <li className="nav-item">Buy Tickets</li> */}
             <div className="btn-panel-nav">
               <Link to="/view-bookings">
                 <button className="login-btn-nav">View Bookings</button>
@@ -51,11 +53,13 @@ const Navbar = () => {
 
       {isOpen && (
         <ul className="nav-items-mobile">
-          <li className="nav-item">Explore</li>
+          <Link to="/">
+            <li className="nav-item">Explore</li>
+          </Link>
           {/* <li className="nav-item">Visitor Information</li>
           <li className="nav-item">Attractions</li> */}
-          <li className="nav-item">Tours</li>
-          <li className="nav-item">Buy Tickets</li>
+          {/* <li className="nav-item">Tours</li>
+          <li className="nav-item">Buy Tickets</li> */}
           <div className="btn-panel-nav">
             <Link to="/view-bookings">
               <button className="login-btn-nav">View Bookings</button>
